@@ -50,51 +50,90 @@ export default function Home() {
         <section className="fullscreen-cinematic-hero" id="home">
           <div className="hero-bg-overlay" />
 
-          <div className="container hero-center-content">
-            <h1 className="hero-big-title">
-              LED TV REPAIR
-              <br />
-              <span>SERVICES</span>
-              <small>MANJU ELECTRONIC • DOORSTEP SERVICE & SUPPORT</small>
-            </h1>
+          <div className="container hero-grid-layout">
+            <div className="hero-left-copy">
+              <div className="hero-top-tag">
+                <span className="live-dot" />
+                <span>70" 4K LED & SMART TV SPECIALIST IN HOSUR</span>
+              </div>
 
-            <p className="hero-subtitle">
-              Uniting our expertise to deliver premier solutions in LED & Smart TV repair, RO water purification, UPS power backup & DTH setup with unmatched quality and speed.
-            </p>
+              <h1 className="hero-big-title">
+                LED TV REPAIR
+                <br />
+                <span>SERVICES</span>
+                <small>MANJU ELECTRONICS • DOORSTEP SERVICE & SUPPORT</small>
+              </h1>
 
-            <div className="hero-cta-group">
-              <a className="btn btn-cinematic-glow" href="#services">
-                Explore Our Repair Services <span>➔</span>
-              </a>
-              <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Manju%20Electronic,%20I%20need%20repair%20service" target="_blank" rel="noreferrer">
-                💬 WhatsApp Support
-              </a>
+              <p className="hero-subtitle">
+                Expert doorstep repair for 32" to 70"+ 4K LED, OLED & Smart TVs in Hosur. Specializing in display backlight, T-Con panel repair, and motherboard servicing.
+              </p>
+
+              <div className="hero-cta-group">
+                <a className="btn btn-cinematic-glow" href="#services">
+                  Explore Repair Services <span>➔</span>
+                </a>
+                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Manju%20Electronic,%20I%20need%2070%20inch%20TV%20repair" target="_blank" rel="noreferrer">
+                  💬 WhatsApp Manjunath Sir
+                </a>
+              </div>
+
+              {/* Bottom Glass Badges */}
+              <div className="hero-bottom-badges">
+                <div className="glass-badge">
+                  <span className="badge-icon">⭐</span>
+                  <span>5.0 Star Google Rated (316+ Reviews)</span>
+                </div>
+                <div className="glass-badge">
+                  <span className="badge-icon">⚡</span>
+                  <span>Same Day Doorstep Repair</span>
+                </div>
+                <div className="glass-badge">
+                  <span className="badge-icon">🛠️</span>
+                  <span>100% Genuine Spare Parts</span>
+                </div>
+              </div>
             </div>
 
-            {/* Bottom Glass Badges */}
-            <div className="hero-bottom-badges">
-              <div className="glass-badge">
-                <span className="badge-icon">⭐</span>
-                <span>5.0 Star Google Rated (316+ Reviews)</span>
-              </div>
-              <div className="glass-badge">
-                <span className="badge-icon">⚡</span>
-                <span>Same Day Doorstep Repair</span>
-              </div>
-              <div className="glass-badge">
-                <span className="badge-icon">🛠️</span>
-                <span>Genuine Spare Parts</span>
+            {/* 70 Inch LED TV Hero Showcase Visual */}
+            <div className="hero-right-visual">
+              <div className="tv-showcase-container">
+                <div className="tv-ambient-glow" />
+                <Image
+                  src="/images/tv_70_inch.png"
+                  alt="70 Inch 4K Ultra HD Smart TV Repair Service in Hosur"
+                  width={720}
+                  height={480}
+                  className="hero-70inch-tv-img"
+                  priority
+                />
+                
+                {/* Floating Glass Badges on 70 Inch TV */}
+                <div className="floating-tv-badge badge-top-right">
+                  <span className="badge-sparkle">✨</span>
+                  <div>
+                    <strong>70" 4K ULTRA HD</strong>
+                    <small>All Screen Sizes Supported</small>
+                  </div>
+                </div>
+
+                <div className="floating-tv-badge badge-bottom-left">
+                  <span className="badge-sparkle">📺</span>
+                  <div>
+                    <strong>Display & Backlight Expert</strong>
+                    <small>Sony, Samsung, LG, Mi & All Brands</small>
+                  </div>
+                </div>
               </div>
             </div>
-
-            {/* Scroll Down Indicator */}
-            <a href="#services" className="scroll-down-indicator" aria-label="Scroll Down">
-              <div className="mouse-icon">
-                <span className="mouse-dot" />
-              </div>
-              <span>Scroll Down</span>
-            </a>
           </div>
+
+          {/* Scroll Down Indicator */}
+          <a href="#services" className="scroll-down-indicator" aria-label="Scroll Down">
+            <div className="mouse-icon">
+              <span className="mouse-dot" />
+            </div>
+            <span>Scroll Down</span>
+          </a>
         </section>
 
         {/* Infinite Brand Marquee Ticker */}
