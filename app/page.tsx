@@ -1,69 +1,436 @@
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
+import BookingForm from "@/app/components/BookingForm";
+import Testimonials from "@/app/components/Testimonials";
+import LocationMap from "@/app/components/LocationMap";
+import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LED TV Repair Services in Hosur | Sony, Samsung, LG & Mi TV Specialist",
+  description:
+    "Top rated LED TV repair services in Hosur by Manjunath Sir. Specialist for Sony brand TV repair in Hosur, Samsung, LG, Mi, OnePlus, Vu, TCL & 4K Smart TV screen backlight repair. Call 98947 66097.",
+  keywords: [
+    "LED TV repair services in Hosur",
+    "TV repair in Hosur",
+    "Sony brand TV repair in Hosur",
+    "Samsung TV repair in Hosur",
+    "LG TV repair in Hosur",
+    "Mi TV repair in Hosur",
+    "OnePlus TV repair in Hosur",
+    "TCL TV repair in Hosur",
+    "Vu TV repair in Hosur",
+    "Realme TV repair in Hosur",
+    "Panasonic TV repair in Hosur",
+    "4K LED TV screen repair Hosur",
+    "TV backlight replacement Hosur",
+    "RO water purifier repair Hosur",
+    "UPS inverter service Hosur"
+  ]
+};
 
 export default function Home() {
+  const heroBrands = [
+    "SONY", "SAMSUNG", "LG", "Haier", "VU", "Panasonic",
+    "TCL", "Xiaomi", "OnePlus", "Redmi", "BPL", "Micromax"
+  ];
+
+  const marqueeBrands = [
+    "📺 SONY", "📺 SAMSUNG", "📺 LG", "📺 HAIER", "📺 VU",
+    "📺 PANASONIC", "📺 TCL", "📺 XIAOMI", "📺 ONEPLUS", "📺 REDMI",
+    "📺 BPL", "📺 MICROMAX", "📺 THOMSON", "📺 REALME"
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <Header />
+      <main>
+        {/* Fullscreen Cinematic Hero Section */}
+        <section className="fullscreen-cinematic-hero" id="home">
+          <div className="hero-bg-overlay" />
+
+          <div className="container hero-center-content">
+            <h1 className="hero-big-title">
+              LED TV REPAIR
+              <br />
+              <span>SERVICES</span>
+              <small>MANJU ELECTRONIC • DOORSTEP SERVICE & SUPPORT</small>
+            </h1>
+
+            <p className="hero-subtitle">
+              Uniting our expertise to deliver premier solutions in LED & Smart TV repair, RO water purification, UPS power backup & DTH setup with unmatched quality and speed.
+            </p>
+
+            <div className="hero-cta-group">
+              <a className="btn btn-cinematic-glow" href="#services">
+                Explore Our Repair Services <span>➔</span>
+              </a>
+              <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Manju%20Electronic,%20I%20need%20repair%20service" target="_blank" rel="noreferrer">
+                💬 WhatsApp Support
+              </a>
+            </div>
+
+            {/* Bottom Glass Badges */}
+            <div className="hero-bottom-badges">
+              <div className="glass-badge">
+                <span className="badge-icon">⭐</span>
+                <span>5.0 Star Google Rated (316+ Reviews)</span>
+              </div>
+              <div className="glass-badge">
+                <span className="badge-icon">⚡</span>
+                <span>Same Day Doorstep Repair</span>
+              </div>
+              <div className="glass-badge">
+                <span className="badge-icon">🛠️</span>
+                <span>Genuine Spare Parts</span>
+              </div>
+            </div>
+
+            {/* Scroll Down Indicator */}
+            <a href="#services" className="scroll-down-indicator" aria-label="Scroll Down">
+              <div className="mouse-icon">
+                <span className="mouse-dot" />
+              </div>
+              <span>Scroll Down</span>
+            </a>
+          </div>
+        </section>
+
+        {/* Infinite Brand Marquee Ticker */}
+        <section className="brand-marquee-strip">
+          <div className="marquee-track">
+            {[...marqueeBrands, ...marqueeBrands].map((b, idx) => (
+              <div className="marquee-item" key={idx}>
+                {b}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Quick Trust Bar */}
+        <section className="trust-strip">
+          <div className="container trust-grid">
+            <Link href="/services/tv-repair" className="trust-item">
+              <strong>TV</strong>
+              <span>LED & Smart TV Service ↗</span>
+            </Link>
+            <Link href="/services/ro-service" className="trust-item">
+              <strong>RO</strong>
+              <span>Water Purifier Care ↗</span>
+            </Link>
+            <Link href="/services/ups-service" className="trust-item">
+              <strong>UPS</strong>
+              <span>Power Backup Systems ↗</span>
+            </Link>
+            <Link href="/services/dth-service" className="trust-item">
+              <strong>DTH</strong>
+              <span>Dish Signal Alignment ↗</span>
+            </Link>
+          </div>
+        </section>
+
+        {/* Main Services Section */}
+        <section className="section" id="services">
+          <div className="container">
+            <div className="section-heading">
+              <span className="eyebrow">OUR SPECIALIZED SERVICES</span>
+              <h2>One-stop shop for all your <span>appliance repairs.</span></h2>
+              <p>Click on any service below to explore full details and view common problems we solve.</p>
+            </div>
+
+            <div className="service-grid">
+              {/* TV Repair Card */}
+              <article className="service-card">
+                <div className="service-icon">📺</div>
+                <span className="card-number">01 / TELEVISION</span>
+                <h3>TV Repair & Service</h3>
+                <p>
+                  LED & Smart TV troubleshooting, black screen display issues, vertical lines, backlight replacement, and motherboard repairs.
+                </p>
+                <div className="card-actions">
+                  <Link href="/services/tv-repair" className="btn-detail">
+                    View Details ↗
+                  </Link>
+                </div>
+              </article>
+
+              {/* RO Purifier Card */}
+              <article className="service-card">
+                <div className="service-icon">💧</div>
+                <span className="card-number">02 / WATER PURIFIER</span>
+                <h3>RO Purifier Service</h3>
+                <p>
+                  Water purifier filter changes, RO membrane replacement, TDS level testing, pump repair, and leak fixing.
+                </p>
+                <div className="card-actions">
+                  <Link href="/services/ro-service" className="btn-detail">
+                    View Details ↗
+                  </Link>
+                </div>
+              </article>
+
+              {/* UPS Backup Card */}
+              <article className="service-card">
+                <div className="service-icon">⚡</div>
+                <span className="card-number">03 / POWER BACKUP</span>
+                <h3>UPS & Inverter Service</h3>
+                <p>
+                  Home UPS troubleshooting, battery backup testing, sine-wave PCB repair, and continuous beep alarm fixing.
+                </p>
+                <div className="card-actions">
+                  <Link href="/services/ups-service" className="btn-detail">
+                    View Details ↗
+                  </Link>
+                </div>
+              </article>
+
+              {/* DTH Dish Card */}
+              <article className="service-card">
+                <div className="service-icon">📡</div>
+                <span className="card-number">04 / CONNECTIVITY</span>
+                <h3>DTH Dish Installation</h3>
+                <p>
+                  Satellite dish signal alignment with digital meter, LNB replacement, new connection fitting, and re-location.
+                </p>
+                <div className="card-actions">
+                  <Link href="/services/dth-service" className="btn-detail">
+                    View Details ↗
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* Technician Spotlight Section featuring Manjunath Sir Photo */}
+        <section className="technician-spotlight-section">
+          <div className="container technician-grid">
+            <div className="technician-image-wrapper">
+              <Image
+                src="/images/manjunath_technician.jpg"
+                alt="Manjunath Sir - Lead Electronics Repair Specialist"
+                width={500}
+                height={500}
+                className="technician-photo"
+              />
+              <div className="technician-badge-overlay">
+                <strong>MANJUNATH SIR</strong>
+                <small>Lead Electronics Specialist</small>
+              </div>
+            </div>
+
+            <div className="technician-info">
+              <span className="eyebrow">👨‍🔧 MEET YOUR EXPERT</span>
+              <h2>Direct Doorstep Service By <span>Manjunath Sir.</span></h2>
+              <p>
+                With years of dedicated experience in 4K LED TV display panel repairs, motherboard diagnostics, RO water purifier filter servicing, and home UPS maintenance, Manjunath sir personally handles your service requests with complete honesty, speed, and transparency.
+              </p>
+
+              <div className="technician-bullets">
+                <div className="tech-bullet-item">
+                  <span className="bullet-icon">⭐</span>
+                  <div>
+                    <strong>5.0 Star Google Rated Specialist</strong>
+                    <small>Over 316+ happy customers in Hosur & Basthi area</small>
+                  </div>
+                </div>
+
+                <div className="tech-bullet-item">
+                  <span className="bullet-icon">⚡</span>
+                  <div>
+                    <strong>Same-Day Response & Doorstep Visit</strong>
+                    <small>Quick inspection & upfront affordable diagnostic estimate</small>
+                  </div>
+                </div>
+
+                <div className="tech-bullet-item">
+                  <span className="bullet-icon">🛡️</span>
+                  <div>
+                    <strong>100% Genuine Component Guarantee</strong>
+                    <small>Guaranteed backlight LEDs, RO membranes & PCB components</small>
+                  </div>
+                </div>
+              </div>
+
+              <div className="technician-cta-row">
+                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Manjunath%20sir,%20I%20need%20electronics%20repair%20service" target="_blank" rel="noreferrer">
+                  💬 Chat Directly with Manjunath Sir
+                </a>
+                <a className="btn btn-primary" href="tel:+919894766097">
+                  📞 Call 98947 66097
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Real Google Reviews Testimonials Section */}
+        <Testimonials />
+
+        {/* Brands Section */}
+        <section className="brands-section" id="brands">
+          <div className="container">
+            <div className="section-heading">
+              <span className="eyebrow">BRANDS WE SUPPORT</span>
+              <h2>Service for leading <span>electronics brands.</span></h2>
+              <p>We work with genuine parts for all major manufacturers.</p>
+            </div>
+            <div className="brand-list">
+              {heroBrands.map((brand) => (
+                <div className="brand-item" key={brand}>{brand}</div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Local SEO & Brand TV Service Keywords Section */}
+        <section className="seo-keywords-section" style={{ padding: "4rem 0", background: "rgba(2, 132, 199, 0.03)" }}>
+          <div className="container">
+            <div className="section-heading" style={{ marginBottom: "2.5rem" }}>
+              <span className="eyebrow">📍 HOSUR LOCAL SERVICE COVERAGE</span>
+              <h2>Top Rated <span>LED TV Repair Services in Hosur</span></h2>
+              <p>
+                Fast doorstep service across Hosur town, Basthi, Bagalur Road, TVS Nagar, SIPCOT & surrounding areas.
+              </p>
+            </div>
+
+            <div className="seo-cards-grid" style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "1.5rem"
+            }}>
+              <div className="seo-card" style={{
+                background: "#ffffff",
+                padding: "1.8rem",
+                borderRadius: "16px",
+                border: "1fr solid rgba(2,132,199,0.12)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
+              }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
+                  📺 Sony Brand TV Repair in Hosur
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+                  Specialized repair for Sony Bravia 4K LED, OLED, Android Smart TV display panel backlight replacement, T-Con board fixes, and mainboard repairs in Hosur.
+                </p>
+              </div>
+
+              <div className="seo-card" style={{
+                background: "#ffffff",
+                padding: "1.8rem",
+                borderRadius: "16px",
+                border: "1fr solid rgba(2,132,199,0.12)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
+              }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
+                  📺 Samsung TV Repair in Hosur
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+                  Expert technician for Samsung Crystal 4K, QLED & Smart TV standby power failure, restart loop issues, and double image panel repairs in Hosur.
+                </p>
+              </div>
+
+              <div className="seo-card" style={{
+                background: "#ffffff",
+                padding: "1.8rem",
+                borderRadius: "16px",
+                border: "1fr solid rgba(2,132,199,0.12)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
+              }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
+                  📺 LG TV Repair in Hosur
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+                  Professional LG WebOS Smart TV screen backlight strip replacement, audio output fixes, and motherboard replacement in Hosur with genuine parts.
+                </p>
+              </div>
+
+              <div className="seo-card" style={{
+                background: "#ffffff",
+                padding: "1.8rem",
+                borderRadius: "16px",
+                border: "1fr solid rgba(2,132,199,0.12)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
+              }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
+                  📺 Mi & Redmi TV Repair in Hosur
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+                  Affordable repair for Xiaomi Mi TV 4A, 4X, 5X, PatchWall reboot stuck issues, black screen display fixes, and HDMI port troubleshooting in Hosur.
+                </p>
+              </div>
+
+              <div className="seo-card" style={{
+                background: "#ffffff",
+                padding: "1.8rem",
+                borderRadius: "16px",
+                border: "1fr solid rgba(2,132,199,0.12)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
+              }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
+                  📺 OnePlus, TCL & Vu TV Repair
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+                  Comprehensive doorstep service for OnePlus TV Y/U/Q series, TCL 4K HDR TVs, Vu Premium 4K TVs, Realme, Panasonic, and Haier models in Hosur.
+                </p>
+              </div>
+
+              <div className="seo-card" style={{
+                background: "#ffffff",
+                padding: "1.8rem",
+                borderRadius: "16px",
+                border: "1fr solid rgba(2,132,199,0.12)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
+              }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#10b981", marginBottom: "0.5rem" }}>
+                  💧 RO, UPS & DTH Services in Hosur
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+                  Along with TV repair in Hosur, we provide RO water purifier filter changing, inverter battery troubleshooting, and Tata Play/Airtel DTH dish alignment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Location Map Section */}
+        <LocationMap />
+
+        {/* Booking Form Section */}
+        <section className="booking-section" id="booking">
+          <div className="container booking-grid">
+            <div className="booking-copy">
+              <span className="eyebrow">BOOK A SERVICE</span>
+              <h2>Let's get your device <span>working again.</span></h2>
+              <p>
+                Share your details and the service you need. Your request will open directly in WhatsApp for instant assistance.
+              </p>
+
+              <div className="contact-line">
+                <span className="contact-symbol">📞</span>
+                <div>
+                  <small>Call us directly</small>
+                  <a href="tel:+919894766097">+91 98947 66097</a>
+                  <a href="tel:+917448777557">+91 74487 77557</a>
+                </div>
+              </div>
+
+              <div className="contact-line">
+                <span className="contact-symbol">✉️</span>
+                <div>
+                  <small>Email enquiries</small>
+                  <a href="mailto:rmanjunath3024@gmail.com">
+                    rmanjunath3024@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <BookingForm initialService="TV Repair" />
+          </div>
+        </section>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
