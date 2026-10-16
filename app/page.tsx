@@ -324,9 +324,9 @@ export default function Home() {
         </section>
 
         {/* Local SEO & Brand TV Service Keywords Section */}
-        <section className="seo-keywords-section" style={{ padding: "4rem 0", background: "rgba(2, 132, 199, 0.03)" }}>
+        <section className="seo-keywords-section">
           <div className="container">
-            <div className="section-heading" style={{ marginBottom: "2.5rem" }}>
+            <div className="section-heading seo-heading">
               <span className="eyebrow">📍 HOSUR LOCAL SERVICE COVERAGE</span>
               <h2>Top Rated <span>LED TV Repair Services in Hosur</span></h2>
               <p>
@@ -334,97 +334,45 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="seo-cards-grid" style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "1.5rem"
-            }}>
-              <div className="seo-card" style={{
-                background: "#ffffff",
-                padding: "1.8rem",
-                borderRadius: "16px",
-                border: "1fr solid rgba(2,132,199,0.12)",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
-              }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
-                  📺 Sony Brand TV Repair in Hosur
-                </h3>
-                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+            <div className="seo-cards-grid">
+              <div className="seo-card">
+                <h3>📺 Sony Brand TV Repair in Hosur</h3>
+                <p>
                   Specialized repair for Sony Bravia 4K LED, OLED, Android Smart TV display panel backlight replacement, T-Con board fixes, and mainboard repairs in Hosur.
                 </p>
               </div>
 
-              <div className="seo-card" style={{
-                background: "#ffffff",
-                padding: "1.8rem",
-                borderRadius: "16px",
-                border: "1fr solid rgba(2,132,199,0.12)",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
-              }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
-                  📺 Samsung TV Repair in Hosur
-                </h3>
-                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+              <div className="seo-card">
+                <h3>📺 Samsung TV Repair in Hosur</h3>
+                <p>
                   Expert technician for Samsung Crystal 4K, QLED & Smart TV standby power failure, restart loop issues, and double image panel repairs in Hosur.
                 </p>
               </div>
 
-              <div className="seo-card" style={{
-                background: "#ffffff",
-                padding: "1.8rem",
-                borderRadius: "16px",
-                border: "1fr solid rgba(2,132,199,0.12)",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
-              }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
-                  📺 LG TV Repair in Hosur
-                </h3>
-                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+              <div className="seo-card">
+                <h3>📺 LG TV Repair in Hosur</h3>
+                <p>
                   Professional LG WebOS Smart TV screen backlight strip replacement, audio output fixes, and motherboard replacement in Hosur with genuine parts.
                 </p>
               </div>
 
-              <div className="seo-card" style={{
-                background: "#ffffff",
-                padding: "1.8rem",
-                borderRadius: "16px",
-                border: "1fr solid rgba(2,132,199,0.12)",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
-              }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
-                  📺 Mi & Redmi TV Repair in Hosur
-                </h3>
-                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+              <div className="seo-card">
+                <h3>📺 Mi & Redmi TV Repair in Hosur</h3>
+                <p>
                   Affordable repair for Xiaomi Mi TV 4A, 4X, 5X, PatchWall reboot stuck issues, black screen display fixes, and HDMI port troubleshooting in Hosur.
                 </p>
               </div>
 
-              <div className="seo-card" style={{
-                background: "#ffffff",
-                padding: "1.8rem",
-                borderRadius: "16px",
-                border: "1fr solid rgba(2,132,199,0.12)",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
-              }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "0.5rem" }}>
-                  📺 OnePlus, TCL & Vu TV Repair
-                </h3>
-                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+              <div className="seo-card">
+                <h3>📺 OnePlus, TCL & Vu TV Repair</h3>
+                <p>
                   Comprehensive doorstep service for OnePlus TV Y/U/Q series, TCL 4K HDR TVs, Vu Premium 4K TVs, Realme, Panasonic, and Haier models in Hosur.
                 </p>
               </div>
 
-              <div className="seo-card" style={{
-                background: "#ffffff",
-                padding: "1.8rem",
-                borderRadius: "16px",
-                border: "1fr solid rgba(2,132,199,0.12)",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.04)"
-              }}>
-                <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#10b981", marginBottom: "0.5rem" }}>
-                  💧 RO, UPS & DTH Services in Hosur
-                </h3>
-                <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.6 }}>
+              <div className="seo-card highlight-seo">
+                <h3>💧 RO, UPS & DTH Services in Hosur</h3>
+                <p>
                   Along with TV repair in Hosur, we provide RO water purifier filter changing, inverter battery troubleshooting, and Tata Play/Airtel DTH dish alignment.
                 </p>
               </div>

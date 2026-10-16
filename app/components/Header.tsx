@@ -1,15 +1,36 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <header className="header">
       <div className="container nav">
-        <Link className="logo" href="/">
+        <Link className="logo" href="/" onClick={() => setMobileMenuOpen(false)}>
           <span className="logo-icon">M</span>
           <span>
             MANJU <strong>ELECTRONIC</strong>
@@ -18,7 +39,7 @@ export default function Header() {
         </Link>
 
         {/* Center Floating Pill Navigation Bar */}
-        <div className="pill-nav-capsule desktop-nav">
+        <nav className="pill-nav-capsule desktop-nav" aria-label="Main Navigation">
           <Link className="pill-item active" href="/">
             Home
           </Link>
@@ -40,7 +61,7 @@ export default function Header() {
           <Link className="pill-item" href="/#contact">
             Contact
           </Link>
-        </div>
+        </nav>
 
         {/* Right CTA Button */}
         <a className="nav-contact-btn" href="tel:+919894766097">
@@ -51,7 +72,9 @@ export default function Header() {
         <button
           className={`mobile-menu-btn ${mobileMenuOpen ? "active" : ""}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle Navigation Menu"
+          aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-drawer-menu"
         >
           <span />
           <span />
@@ -59,51 +82,72 @@ export default function Header() {
         </button>
       </div>
 
+      {/* Backdrop overlay for mobile drawer */}
+      {mobileMenuOpen && (
+        <div
+          className="mobile-drawer-backdrop"
+          onClick={() => setMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="mobile-drawer">
-          <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-            Home
-          </Link>
-          <div className="mobile-services-group">
-            <span className="group-title">OUR SERVICES</span>
-            <Link
-              href="/services/tv-repair"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              📺 TV Repair & Service
+        <div className="mobile-drawer" id="mobile-drawer-menu" role="dialog" aria-modal="true">
+          <div className="mobile-drawer-links">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+              🏠 Home
             </Link>
-            <Link
-              href="/services/ro-service"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              💧 RO Water Purifier Service
+            <div className="mobile-services-group">
+              <span className="group-title">OUR SERVICES</span>
+              <Link
+                href="/services/tv-repair"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                📺 TV Repair & Service
+              </Link>
+              <Link
+                href="/services/ro-service"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                💧 RO Water Purifier Service
+              </Link>
+              <Link
+                href="/services/ups-service"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                ⚡ UPS & Power Backup
+              </Link>
+              <Link
+                href="/services/dth-service"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                📡 DTH Installation & Setup
+              </Link>
+            </div>
+            <Link href="/testimonials" onClick={() => setMobileMenuOpen(false)}>
+              ⭐ Google Reviews (5.0 ⭐)
             </Link>
-            <Link
-              href="/services/ups-service"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              ⚡ UPS & Power Backup
+            <Link href="/#brands" onClick={() => setMobileMenuOpen(false)}>
+              🏷️ Brands Supported
             </Link>
-            <Link
-              href="/services/dth-service"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              📡 DTH Installation & Setup
+            <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
+              📍 Contact Us & Location
             </Link>
           </div>
-          <Link href="/testimonials" onClick={() => setMobileMenuOpen(false)}>
-            ⭐ Google Reviews (5.0 ⭐)
-          </Link>
-          <Link href="/#brands" onClick={() => setMobileMenuOpen(false)}>
-            Brands Supported
-          </Link>
-          <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
-            Contact Us
-          </Link>
-          <a className="btn btn-primary" href="tel:+919894766097">
-            ☎ Call 98947 66097
-          </a>
+          <div className="mobile-drawer-cta">
+            <a className="btn btn-primary mobile-cta-btn" href="tel:+919894766097">
+              ☎ Call 98947 66097
+            </a>
+            <a
+              className="btn btn-whatsapp mobile-cta-btn"
+              href="https://wa.me/919894766097?text=Hi%20Manju%20Electronic,%20I%20need%20electronics%20service"
+              target="_blank"
+              rel="noreferrer"
+            >
+              💬 WhatsApp Us
+            </a>
+          </div>
         </div>
       )}
     </header>
