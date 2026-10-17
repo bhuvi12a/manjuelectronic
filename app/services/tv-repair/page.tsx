@@ -6,9 +6,24 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LED & Smart TV Repair Service by Manjunath Sir | Manju Electronic",
+  title: "Best LED TV Repair Services in Hosur | 4K LED TV Repair Specialist",
   description:
-    "Expert doorstep LED, Smart, OLED TV repair service by Manjunath sir in Hosur. Display fixes, motherboard repair, backlight replacement for Sony, Samsung, LG and all major brands.",
+    "Top rated LED TV repair services in Hosur by certified 4K LED TV repair specialist Mr. Manjunath. Doorstep screen backlight, T-Con panel & motherboard repair for Sony, Samsung, LG, Mi, OnePlus and all brands. Call 98947 66097.",
+  keywords: [
+    "best LED tv repair services in hosur",
+    "led tv repair services",
+    "4k led tv repair specialist",
+    "4k led tv repair spicalist",
+    "best LED TV repair in Hosur",
+    "4K LED TV repair specialist in Hosur",
+    "doorstep LED TV repair services",
+    "LED TV repair services near me",
+    "Sony brand TV repair in Hosur",
+    "Samsung TV repair in Hosur",
+    "LG TV repair in Hosur",
+    "Mi TV repair in Hosur",
+    "Smart TV repair specialist Hosur"
+  ]
 };
 
 export default function TVRepairPage() {
@@ -66,10 +81,10 @@ export default function TVRepairPage() {
         <section className="service-hero">
           <div className="container service-hero-grid">
             <div className="service-hero-content">
-              <span className="eyebrow">PREMIUM TV REPAIR SPECIALIST</span>
-              <h1>LED & Smart TV Repair Service</h1>
+              <span className="eyebrow">#1 BEST LED TV REPAIR SERVICES IN HOSUR</span>
+              <h1>Best LED TV Repair Services & 4K Specialist</h1>
               <p>
-                Is your TV screen dark, flickering, or not turning on? Manjunath sir provides fast, reliable, and affordable doorstep TV repair in Hosur for all major brands.
+                Is your TV screen dark, flickering, or not turning on? Certified 4K LED TV repair specialist Mr. Manjunath provides fast, reliable, and affordable doorstep LED TV repair services in Hosur for all major brands.
               </p>
 
               <div className="service-highlights">
@@ -100,8 +115,8 @@ export default function TVRepairPage() {
                 <a className="btn btn-primary" href="#booking">
                   Book TV Inspection ↗
                 </a>
-                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Manjunath%20sir,%20I%20need%20TV%20Repair" target="_blank" rel="noreferrer">
-                  💬 WhatsApp Manjunath Sir
+                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Mr%20Manjunath,%20I%20need%20TV%20Repair" target="_blank" rel="noreferrer">
+                  💬 WhatsApp Mr. Manjunath
                 </a>
               </div>
             </div>
@@ -110,15 +125,15 @@ export default function TVRepairPage() {
               <div className="technician-image-wrapper">
                 <Image
                   src="/images/manjunath_technician.jpg"
-                  alt="Manjunath Sir repairing LED TV"
+                  alt="Mr. Manjunath repairing LED TV"
                   width={480}
                   height={480}
                   className="technician-photo"
                   priority
                 />
                 <div className="technician-badge-overlay">
-                  <strong>MANJUNATH SIR</strong>
-                  <small>TV Service Specialist</small>
+                  <strong>MR. MANJUNATH</strong>
+                  <small>LED TV Repair Specialist</small>
                 </div>
               </div>
             </div>
@@ -142,6 +157,45 @@ export default function TVRepairPage() {
                   <p>{issue.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 4K LED & OLED TV Screen Panel Showcase */}
+        <section className="tv-panel-showcase-section">
+          <div className="container tv-panel-showcase-grid">
+            <div className="tv-panel-image-wrap">
+              <Image
+                src="/images/smart_led_tv.jpg"
+                alt="4K OLED & Smart TV Panel Repair in Hosur"
+                width={600}
+                height={400}
+                className="tv-panel-photo"
+              />
+              <div className="panel-badge-chip">
+                <span>✨ 32" to 70"+ All Screen Sizes</span>
+              </div>
+            </div>
+            <div className="tv-panel-details">
+              <span className="eyebrow">PRECISION DISPLAY SERVICING</span>
+              <h2>Specialist in <span>4K & OLED Smart TV Panels</span></h2>
+              <p>
+                From backlight LED strip failures and horizontal line distortion to T-Con logic board troubleshooting, we use specialized precision tools to restore crystal-clear picture quality without needing costly full-panel replacements.
+              </p>
+              <div className="tv-spec-points">
+                <div className="spec-item">
+                  <strong>✓ Backlight LED Strip Array Replacement</strong>
+                  <small>Fixes dark screen with sound working problem</small>
+                </div>
+                <div className="spec-item">
+                  <strong>✓ Motherboard & Power Board Repair</strong>
+                  <small>Resolves red light blinking & restart loop faults</small>
+                </div>
+                <div className="spec-item">
+                  <strong>✓ 100% Genuine Certified Spare Parts</strong>
+                  <small>For Sony Bravia, Samsung, LG WebOS, Mi TV & more</small>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -171,7 +225,7 @@ export default function TVRepairPage() {
               <span className="eyebrow">GET IN TOUCH</span>
               <h2>Book your TV <span>repair today.</span></h2>
               <p>
-                Send your service request now. Manjunath sir will review your TV problem and arrange a prompt visit or phone guidance.
+                Send your service request now. Mr. Manjunath will review your TV problem and arrange a prompt visit or phone guidance.
               </p>
 
               <div className="contact-line">

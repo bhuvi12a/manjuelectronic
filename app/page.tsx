@@ -8,10 +8,18 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LED TV Repair Services in Hosur | Sony, Samsung, LG & Mi TV Specialist",
+  title: "Best LED TV Repair Services in Hosur | 4K LED TV Repair Specialist",
   description:
-    "Top rated LED TV repair services in Hosur by Manjunath Sir. Specialist for Sony brand TV repair in Hosur, Samsung, LG, Mi, OnePlus, Vu, TCL & 4K Smart TV screen backlight repair. Call 98947 66097.",
+    "Looking for the best LED TV repair services in Hosur? Manju Electronics is your #1 4K LED TV repair specialist by Mr. Manjunath. Same-day doorstep backlight & display panel repair for Sony, Samsung, LG, Mi, OnePlus, Vu, TCL 4K Smart TVs. Call 98947 66097.",
   keywords: [
+    "best LED tv repair services in hosur",
+    "led tv repair services",
+    "4k led tv repair specialist",
+    "4k led tv repair spicalist",
+    "best LED TV repair in Hosur",
+    "4K LED TV repair specialist in Hosur",
+    "doorstep LED TV repair services",
+    "LED TV repair services near me",
     "LED TV repair services in Hosur",
     "TV repair in Hosur",
     "Sony brand TV repair in Hosur",
@@ -54,26 +62,26 @@ export default function Home() {
             <div className="hero-left-copy">
               <div className="hero-top-tag">
                 <span className="live-dot" />
-                <span>70" 4K LED & SMART TV SPECIALIST IN HOSUR</span>
+                <span>#1 BEST LED TV REPAIR SERVICES IN HOSUR • 4K LED TV REPAIR SPECIALIST</span>
               </div>
 
               <h1 className="hero-big-title">
-                LED TV REPAIR
+                BEST LED TV REPAIR
                 <br />
-                <span>SERVICES</span>
-                <small>MANJU ELECTRONICS • DOORSTEP SERVICE & SUPPORT</small>
+                <span>SERVICES IN HOSUR</span>
+                <small>MANJU ELECTRONICS • 4K LED TV REPAIR SPECIALIST • DOORSTEP SUPPORT</small>
               </h1>
 
               <p className="hero-subtitle">
-                Expert doorstep repair for 32" to 70"+ 4K LED, OLED & Smart TVs in Hosur. Specializing in display backlight, T-Con panel repair, and motherboard servicing.
+                Expert doorstep LED TV repair services for 32" to 70"+ 4K LED, OLED & Smart TVs in Hosur. Specializing in display backlight replacement, T-Con panel repair, and motherboard servicing.
               </p>
 
               <div className="hero-cta-group">
                 <a className="btn btn-cinematic-glow" href="#services">
                   Explore Repair Services <span>➔</span>
                 </a>
-                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Manju%20Electronic,%20I%20need%2070%20inch%20TV%20repair" target="_blank" rel="noreferrer">
-                  💬 WhatsApp Manjunath Sir
+                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Mr%20Manjunath,%20I%20need%2070%20inch%20TV%20repair" target="_blank" rel="noreferrer">
+                  💬 WhatsApp Mr. Manjunath
                 </a>
               </div>
 
@@ -151,20 +159,67 @@ export default function Home() {
         <section className="trust-strip">
           <div className="container trust-grid">
             <Link href="/services/tv-repair" className="trust-item">
-              <strong>TV</strong>
-              <span>LED & Smart TV Service ↗</span>
+              <div className="trust-thumb">
+                <Image
+                  src="/images/smart_led_tv.jpg"
+                  alt="LED and Smart TV Repair Hosur"
+                  width={60}
+                  height={60}
+                  className="trust-thumb-img"
+                />
+              </div>
+              <div className="trust-item-text">
+                <strong>TV Repair</strong>
+                <span>LED & Smart TV Service ↗</span>
+              </div>
             </Link>
+
             <Link href="/services/ro-service" className="trust-item">
-              <strong>RO</strong>
-              <span>Water Purifier Care ↗</span>
+              <div className="trust-thumb">
+                <Image
+                  src="/images/ro_machine.jpg"
+                  alt="RO Water Purifier Machine Service Hosur"
+                  width={60}
+                  height={60}
+                  className="trust-thumb-img"
+                />
+              </div>
+              <div className="trust-item-text">
+                <strong>RO Purifier</strong>
+                <span>Water Purifier Care ↗</span>
+              </div>
             </Link>
+
             <Link href="/services/ups-service" className="trust-item">
-              <strong>UPS</strong>
-              <span>Power Backup Systems ↗</span>
+              <div className="trust-thumb">
+                <Image
+                  src="/images/ups_inverter.jpg"
+                  alt="Home UPS and Inverter Service Hosur"
+                  width={60}
+                  height={60}
+                  className="trust-thumb-img"
+                />
+              </div>
+              <div className="trust-item-text">
+                <strong>UPS Inverter</strong>
+                <span>Power Backup Systems ↗</span>
+              </div>
             </Link>
+
             <Link href="/services/dth-service" className="trust-item">
-              <strong>DTH</strong>
-              <span>Dish Signal Alignment ↗</span>
+              <div className="trust-thumb">
+                <Image
+                  src="/images/dth_dish.jpg"
+                  alt="DTH Dish Antenna Installation Hosur"
+                  width={60}
+                  height={60}
+                  className="trust-thumb-img"
+                />
+              </div>
+              <div className="trust-item-text">
+                <strong>DTH Dish</strong>
+                <span>Dish Signal Alignment ↗</span>
+              </div>
             </Link>
           </div>
         </section>
@@ -175,95 +230,163 @@ export default function Home() {
             <div className="section-heading">
               <span className="eyebrow">OUR SPECIALIZED SERVICES</span>
               <h2>One-stop shop for all your <span>appliance repairs.</span></h2>
-              <p>Click on any service below to explore full details and view common problems we solve.</p>
+              <p>Click on any service below to explore full details, spare parts guarantee, and view common problems we solve.</p>
             </div>
 
             <div className="service-grid">
               {/* TV Repair Card */}
               <article className="service-card">
-                <div className="service-icon">📺</div>
-                <span className="card-number">01 / TELEVISION</span>
-                <h3>TV Repair & Service</h3>
-                <p>
-                  LED & Smart TV troubleshooting, black screen display issues, vertical lines, backlight replacement, and motherboard repairs.
-                </p>
-                <div className="card-actions">
-                  <Link href="/services/tv-repair" className="btn-detail">
-                    View Details ↗
-                  </Link>
+                <div className="service-card-image-wrap">
+                  <Image
+                    src="/images/smart_led_tv.jpg"
+                    alt="4K OLED & Smart LED TV Repair in Hosur"
+                    width={480}
+                    height={260}
+                    className="service-card-img"
+                  />
+                  <div className="service-card-overlay-badge">
+                    <span>01 / TELEVISION</span>
+                  </div>
+                </div>
+                <div className="service-card-body">
+                  <h3>TV Repair & Service</h3>
+                  <p>
+                    Expert doorstep troubleshooting for 32" to 70"+ 4K LED & Smart TVs. Screen backlight repair, T-Con panel fixes, sound-only issue, and motherboard servicing.
+                  </p>
+                  <div className="service-card-features">
+                    <span>4K Display</span>
+                    <span>LED Backlight</span>
+                    <span>Motherboard Fix</span>
+                  </div>
+                  <div className="card-actions">
+                    <Link href="/services/tv-repair" className="btn-detail">
+                      View TV Details ↗
+                    </Link>
+                  </div>
                 </div>
               </article>
 
               {/* RO Purifier Card */}
               <article className="service-card">
-                <div className="service-icon">💧</div>
-                <span className="card-number">02 / WATER PURIFIER</span>
-                <h3>RO Purifier Service</h3>
-                <p>
-                  Water purifier filter changes, RO membrane replacement, TDS level testing, pump repair, and leak fixing.
-                </p>
-                <div className="card-actions">
-                  <Link href="/services/ro-service" className="btn-detail">
-                    View Details ↗
-                  </Link>
+                <div className="service-card-image-wrap">
+                  <Image
+                    src="/images/ro_machine.jpg"
+                    alt="RO Water Purifier Machine Service in Hosur"
+                    width={480}
+                    height={260}
+                    className="service-card-img"
+                  />
+                  <div className="service-card-overlay-badge badge-accent">
+                    <span>02 / WATER PURIFIER</span>
+                  </div>
+                </div>
+                <div className="service-card-body">
+                  <h3>RO Purifier Service</h3>
+                  <p>
+                    Complete RO filter replacements, authentic RO membranes, water TDS digital testing, booster pump diagnostics, and leak rectification for all brands.
+                  </p>
+                  <div className="service-card-features">
+                    <span>Filter Change</span>
+                    <span>RO Membrane</span>
+                    <span>TDS Testing</span>
+                  </div>
+                  <div className="card-actions">
+                    <Link href="/services/ro-service" className="btn-detail">
+                      View RO Details ↗
+                    </Link>
+                  </div>
                 </div>
               </article>
 
               {/* UPS Backup Card */}
               <article className="service-card">
-                <div className="service-icon">⚡</div>
-                <span className="card-number">03 / POWER BACKUP</span>
-                <h3>UPS & Inverter Service</h3>
-                <p>
-                  Home UPS troubleshooting, battery backup testing, sine-wave PCB repair, and continuous beep alarm fixing.
-                </p>
-                <div className="card-actions">
-                  <Link href="/services/ups-service" className="btn-detail">
-                    View Details ↗
-                  </Link>
+                <div className="service-card-image-wrap">
+                  <Image
+                    src="/images/ups_inverter.jpg"
+                    alt="Home UPS and Inverter Service in Hosur"
+                    width={480}
+                    height={260}
+                    className="service-card-img"
+                  />
+                  <div className="service-card-overlay-badge">
+                    <span>03 / POWER BACKUP</span>
+                  </div>
+                </div>
+                <div className="service-card-body">
+                  <h3>UPS & Inverter Service</h3>
+                  <p>
+                    Home inverter troubleshooting, tubular battery health checks, pure sine-wave PCB repairs, auto-cut relay fixing, and continuous beep alarm silencing.
+                  </p>
+                  <div className="service-card-features">
+                    <span>PCB Repair</span>
+                    <span>Tubular Battery</span>
+                    <span>Beep Fix</span>
+                  </div>
+                  <div className="card-actions">
+                    <Link href="/services/ups-service" className="btn-detail">
+                      View UPS Details ↗
+                    </Link>
+                  </div>
                 </div>
               </article>
 
               {/* DTH Dish Card */}
               <article className="service-card">
-                <div className="service-icon">📡</div>
-                <span className="card-number">04 / CONNECTIVITY</span>
-                <h3>DTH Dish Installation</h3>
-                <p>
-                  Satellite dish signal alignment with digital meter, LNB replacement, new connection fitting, and re-location.
-                </p>
-                <div className="card-actions">
-                  <Link href="/services/dth-service" className="btn-detail">
-                    View Details ↗
-                  </Link>
+                <div className="service-card-image-wrap">
+                  <Image
+                    src="/images/dth_dish.jpg"
+                    alt="DTH Satellite Dish Installation & Signal Alignment in Hosur"
+                    width={480}
+                    height={260}
+                    className="service-card-img"
+                  />
+                  <div className="service-card-overlay-badge badge-accent">
+                    <span>04 / CONNECTIVITY</span>
+                  </div>
+                </div>
+                <div className="service-card-body">
+                  <h3>DTH Dish Installation</h3>
+                  <p>
+                    Satellite dish antenna signal alignment using precision digital meters, heavy-duty LNB fitting, cable wiring, and rooftop relocation services.
+                  </p>
+                  <div className="service-card-features">
+                    <span>Signal Tuning</span>
+                    <span>LNB Fitting</span>
+                    <span>Tata Play / Airtel</span>
+                  </div>
+                  <div className="card-actions">
+                    <Link href="/services/dth-service" className="btn-detail">
+                      View DTH Details ↗
+                    </Link>
+                  </div>
                 </div>
               </article>
             </div>
           </div>
         </section>
 
-        {/* Technician Spotlight Section featuring Manjunath Sir Photo */}
+        {/* Technician Spotlight Section featuring Mr. Manjunath Photo */}
         <section className="technician-spotlight-section">
           <div className="container technician-grid">
             <div className="technician-image-wrapper">
               <Image
                 src="/images/manjunath_technician.jpg"
-                alt="Manjunath Sir - Lead Electronics Repair Specialist"
+                alt="Mr. Manjunath - LED TV Repair Specialist"
                 width={500}
                 height={500}
                 className="technician-photo"
               />
               <div className="technician-badge-overlay">
-                <strong>MANJUNATH SIR</strong>
-                <small>Lead Electronics Specialist</small>
+                <strong>MR. MANJUNATH</strong>
+                <small>LED TV Repair Specialist</small>
               </div>
             </div>
 
             <div className="technician-info">
               <span className="eyebrow">👨‍🔧 MEET YOUR EXPERT</span>
-              <h2>Direct Doorstep Service By <span>Manjunath Sir.</span></h2>
+              <h2>Direct Doorstep Service By <span>Mr. Manjunath.</span></h2>
               <p>
-                With years of dedicated experience in 4K LED TV display panel repairs, motherboard diagnostics, RO water purifier filter servicing, and home UPS maintenance, Manjunath sir personally handles your service requests with complete honesty, speed, and transparency.
+                With years of dedicated experience in 4K LED TV display panel repairs, motherboard diagnostics, RO water purifier filter servicing, and home UPS maintenance, Mr. Manjunath personally handles your service requests with complete honesty, speed, and transparency.
               </p>
 
               <div className="technician-bullets">
@@ -293,8 +416,8 @@ export default function Home() {
               </div>
 
               <div className="technician-cta-row">
-                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Manjunath%20sir,%20I%20need%20electronics%20repair%20service" target="_blank" rel="noreferrer">
-                  💬 Chat Directly with Manjunath Sir
+                <a className="btn btn-whatsapp" href="https://wa.me/919894766097?text=Hi%20Mr%20Manjunath,%20I%20need%20electronics%20repair%20service" target="_blank" rel="noreferrer">
+                  💬 Chat Directly with Mr. Manjunath
                 </a>
                 <a className="btn btn-primary" href="tel:+919894766097">
                   📞 Call 98947 66097
@@ -328,13 +451,27 @@ export default function Home() {
           <div className="container">
             <div className="section-heading seo-heading">
               <span className="eyebrow">📍 HOSUR LOCAL SERVICE COVERAGE</span>
-              <h2>Top Rated <span>LED TV Repair Services in Hosur</span></h2>
+              <h2>Best <span>LED TV Repair Services in Hosur</span></h2>
               <p>
-                Fast doorstep service across Hosur town, Basthi, Bagalur Road, TVS Nagar, SIPCOT & surrounding areas.
+                Fast doorstep service across Hosur town, Basthi, Bagalur Road, TVS Nagar, SIPCOT & surrounding areas by certified 4K LED TV repair specialist Mr. Manjunath.
               </p>
             </div>
 
             <div className="seo-cards-grid">
+              <div className="seo-card highlight-seo">
+                <h3>⭐ Best LED TV Repair Services in Hosur</h3>
+                <p>
+                  Ranked #1 for reliable, doorstep LED TV repair services in Hosur. Same-day inspection for screen dark issues, flickering backlights, motherboard faults, and sound without picture on all major brands.
+                </p>
+              </div>
+
+              <div className="seo-card highlight-seo">
+                <h3>🛠️ 4K LED TV Repair Specialist</h3>
+                <p>
+                  Specialized technician for 32" to 75"+ 4K Ultra HD, OLED & Smart TV display panel servicing, COF bonding, T-Con board diagnostics, and genuine backlight LED strip replacements.
+                </p>
+              </div>
+
               <div className="seo-card">
                 <h3>📺 Sony Brand TV Repair in Hosur</h3>
                 <p>
@@ -409,6 +546,23 @@ export default function Home() {
                   <a href="mailto:rmanjunath3024@gmail.com">
                     rmanjunath3024@gmail.com
                   </a>
+                </div>
+              </div>
+
+              <div className="contact-line">
+                <span className="contact-symbol">📍</span>
+                <div>
+                  <small>Workshop Location & Map</small>
+                  <a
+                    href="https://www.google.com/maps/dir//MANJU+ELECTRONICS+(4K.LEDTV+SERVICE),+Basthi,+Hosur,+Tamil+Nadu+635109/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae7194d192855f:0xa29cb460e95228a?sa=X&ved=1t:57443&ictx=111"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Basthi, Hosur (Google Maps ↗)
+                  </a>
+                  <span style={{ fontSize: "0.8rem", color: "#64748b", display: "block", marginTop: "2px" }}>
+                    Geo: 12.7450633° N, 77.8378731° E
+                  </span>
                 </div>
               </div>
             </div>

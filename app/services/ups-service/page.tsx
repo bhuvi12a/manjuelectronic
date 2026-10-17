@@ -2,6 +2,7 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import BookingForm from "@/app/components/BookingForm";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -99,15 +100,30 @@ export default function UPSServicePage() {
 
             <div className="service-hero-card">
               <div className="card-badge">POWER PROTECTION</div>
-              <div className="visual-tv-card">
-                <span className="tv-icon">⚡</span>
-                <h3>Complete Inverter Care</h3>
-                <ul>
-                  <li>• PCB & MOSFET Replacement</li>
-                  <li>• Battery Health Diagnostics</li>
-                  <li>• Changeover Relay Repair</li>
-                  <li>• Safe Wire Cabling</li>
-                </ul>
+              <div className="visual-equipment-showcase-card">
+                <div className="equipment-card-media">
+                  <Image
+                    src="/images/ups_inverter.jpg"
+                    alt="Home UPS and Inverter Repair Service in Hosur"
+                    width={520}
+                    height={340}
+                    className="equipment-card-img"
+                    priority
+                  />
+                  <div className="equipment-floating-badge">
+                    <span className="live-dot" />
+                    <span>Pure Sine Wave Protection</span>
+                  </div>
+                </div>
+                <div className="equipment-card-content">
+                  <h3>Complete Inverter & Battery Care</h3>
+                  <ul className="equipment-features-list">
+                    <li>✓ Pure Sine-Wave PCB & MOSFET Repair</li>
+                    <li>✓ Battery Acid Gravity & Capacity Testing</li>
+                    <li>✓ Automatic Changeover Relay Fixing</li>
+                    <li>✓ Safe Heavy-Gauge Copper Cabling</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

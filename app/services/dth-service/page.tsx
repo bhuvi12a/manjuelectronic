@@ -2,6 +2,7 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import BookingForm from "@/app/components/BookingForm";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -99,15 +100,30 @@ export default function DTHServicePage() {
 
             <div className="service-hero-card">
               <div className="card-badge">SIGNAL EXPERTS</div>
-              <div className="visual-tv-card">
-                <span className="tv-icon">📡</span>
-                <h3>DTH Services Covered</h3>
-                <ul>
-                  <li>• High-Gain Signal Alignment</li>
-                  <li>• LNB & Dish Antenna Fitting</li>
-                  <li>• Home Relocation Setup</li>
-                  <li>• RG-6 Cabling & Connectors</li>
-                </ul>
+              <div className="visual-equipment-showcase-card">
+                <div className="equipment-card-media">
+                  <Image
+                    src="/images/dth_dish.jpg"
+                    alt="Satellite DTH Dish Antenna Installation & Alignment in Hosur"
+                    width={520}
+                    height={340}
+                    className="equipment-card-img"
+                    priority
+                  />
+                  <div className="equipment-floating-badge">
+                    <span className="live-dot" />
+                    <span>HD 100% Signal Lock</span>
+                  </div>
+                </div>
+                <div className="equipment-card-content">
+                  <h3>DTH Dish Installation & Alignment</h3>
+                  <ul className="equipment-features-list">
+                    <li>✓ High-Gain Signal Alignment with Digital Meter</li>
+                    <li>✓ Universal Single & Dual LNB Fitting</li>
+                    <li>✓ Home Relocation Setup & Re-installation</li>
+                    <li>✓ Weatherproof RG-6 Cabling & F-Connectors</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

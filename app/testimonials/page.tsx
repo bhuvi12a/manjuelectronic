@@ -46,7 +46,7 @@ export default function TestimonialsPage() {
               <span className="eyebrow">BOOK YOUR SERVICE</span>
               <h2>Ready to experience <span>5-star service?</span></h2>
               <p>
-                Join hundreds of satisfied customers in Hosur. Connect with technician Manjunath sir directly on WhatsApp for same-day repair.
+                Join hundreds of satisfied customers in Hosur. Connect with technician Mr. Manjunath directly on WhatsApp for same-day repair.
               </p>
 
               <div className="contact-line">

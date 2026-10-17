@@ -2,7 +2,7 @@
 
 export default function LocationMap() {
   const directionsUrl =
-    "https://www.google.com/maps/dir//MANJU+ELECTRONICS+(4K.LEDTV+SERVICE),+Basthi,+Hosur,+Tamil+Nadu+635109/@12.7409134,77.8252918,4398m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3bae7194d192855f:0xa29cb460e95228a!2m2!1d77.8378731!2d12.7450633";
+    "https://www.google.com/maps/dir//MANJU+ELECTRONICS+(4K.LEDTV+SERVICE),+Basthi,+Hosur,+Tamil+Nadu+635109/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae7194d192855f:0xa29cb460e95228a?sa=X&ved=1t:57443&ictx=111";
 
   return (
     <section className="location-section" id="location">
@@ -11,7 +11,7 @@ export default function LocationMap() {
           <span className="eyebrow">📍 OUR LOCATION & SERVICE AREA</span>
           <h2>Visit Our Workshop or <span>Request Doorstep Visit.</span></h2>
           <p>
-            Conveniently located in Basthi, Hosur. We provide home visit service across Hosur and surrounding areas.
+            Conveniently located in Basthi, Hosur. We provide same-day home visit service across Hosur and surrounding areas.
           </p>
         </div>
 
@@ -25,7 +25,17 @@ export default function LocationMap() {
               <span className="loc-icon">📍</span>
               <div>
                 <strong>Shop Address</strong>
-                <p>Basthi, Hosur, Tamil Nadu 635109, India</p>
+                <p>
+                  Basthi, Hosur, Tamil Nadu 635109, India
+                </p>
+              </div>
+            </div>
+
+            <div className="loc-detail-item">
+              <span className="loc-icon">🌐</span>
+              <div>
+                <strong>Geo Coordinates</strong>
+                <p>12.7450633° N, 77.8378731° E</p>
               </div>
             </div>
 
@@ -67,11 +77,11 @@ export default function LocationMap() {
               </a>
               <a
                 className="btn btn-whatsapp"
-                href="https://wa.me/919894766097?text=Hi%20Manju%20Electronic,%20I%20need%20location%20and%20service"
+                href="https://wa.me/919894766097?text=Hi%20Mr%20Manjunath,%20I%20need%20location%20and%20service%20in%20Hosur"
                 target="_blank"
                 rel="noreferrer"
               >
-                💬 Send Location on WhatsApp
+                💬 WhatsApp Mr. Manjunath
               </a>
             </div>
           </div>
@@ -79,7 +89,7 @@ export default function LocationMap() {
           {/* Embedded Interactive Map */}
           <div className="map-frame-wrapper">
             <iframe
-              title="Manju Electronics Google Maps Location"
+              title="MANJU ELECTRONICS (4K.LEDTV SERVICE) Google Maps Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15569.574676451636!2d77.8252918!3d12.7409134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7194d192855f%3A0xa29cb460e95228a!2sMANJU%20ELECTRONICS%20(4K.LEDTV%20SERVICE)!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="450"

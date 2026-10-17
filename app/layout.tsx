@@ -20,11 +20,19 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "LED TV Repair Services in Hosur | Sony, Samsung, LG & Mi TV Repair | Manju Electronics",
+  title: "Best LED TV Repair Services in Hosur | 4K LED TV Repair Specialist | Manju Electronics",
   description:
-    "Top-rated LED TV Repair Services in Hosur. Specialist for Sony brand TV repair in Hosur, Samsung, LG, Mi, OnePlus, Vu, TCL 4K Smart TVs. Doorstep service in Basthi & Hosur. Call +91 98947 66097.",
+    "Looking for the best LED TV repair services in Hosur? Manju Electronics is your #1 4K LED TV repair specialist. Doorstep display backlight, panel & motherboard repair for Sony, Samsung, LG, Mi TVs in Hosur. Call +91 98947 66097.",
   keywords: [
+    "best LED tv repair services in hosur",
+    "led tv repair services",
+    "4k led tv repair specialist",
+    "4k led tv repair spicalist",
     "LED TV repair services in Hosur",
+    "best LED TV repair in Hosur",
+    "4K LED TV repair specialist in Hosur",
+    "doorstep LED TV repair services",
+    "LED TV repair services near me",
     "TV repair in Hosur",
     "Sony brand TV repair in Hosur",
     "Samsung TV repair in Hosur",
@@ -45,7 +53,7 @@ export const metadata: Metadata = {
     "Manju Electronics Hosur",
     "Doorstep TV technician Hosur"
   ],
-  authors: [{ name: "Manjunath Sir - Manju Electronics Hosur" }],
+  authors: [{ name: "Mr. Manjunath - Manju Electronics Hosur" }],
   creator: "Manju Electronics",
   publisher: "Manju Electronics",
   formatDetection: {
@@ -57,10 +65,12 @@ export const metadata: Metadata = {
     "geo.placename": "Basthi, Hosur, Tamil Nadu 635109, India",
     "geo.region": "IN-TN",
     "ICBM": "12.7450633, 77.8378731",
+    "place:location:latitude": "12.7450633",
+    "place:location:longitude": "77.8378731",
   },
   openGraph: {
-    title: "LED TV Repair Services in Hosur | Sony, Samsung, LG, Mi TV Specialist",
-    description: "5.0 Star Rated TV Repair Shop in Hosur. Fast doorstep LED, 4K Smart TV display, panel & motherboard repair by Manjunath Sir.",
+    title: "Best LED TV Repair Services in Hosur | 4K LED TV Repair Specialist",
+    description: "5.0 Star rated best LED TV repair services in Hosur. Certified 4K LED TV repair specialist Mr. Manjunath provides same-day doorstep TV display panel & motherboard repair.",
     url: "https://manjuelectronics.in",
     siteName: "MANJU ELECTRONICS (4K.LEDTV SERVICE)",
     locale: "en_IN",
@@ -68,8 +78,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LED TV Repair Services in Hosur | Manju Electronics",
-    description: "Expert Sony, Samsung, LG & Mi TV repair in Hosur with doorstep service.",
+    title: "Best LED TV Repair Services in Hosur | 4K LED TV Repair Specialist",
+    description: "Expert doorstep LED TV repair services in Hosur for Sony, Samsung, LG, Mi 4K Smart TVs.",
+  },
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
   },
   robots: {
     index: true,
@@ -106,6 +121,10 @@ const jsonLd = {
     "latitude": 12.7450633,
     "longitude": 77.8378731
   },
+  "hasMap": "https://www.google.com/maps/dir//MANJU+ELECTRONICS+(4K.LEDTV+SERVICE),+Basthi,+Hosur,+Tamil+Nadu+635109/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae7194d192855f:0xa29cb460e95228a?sa=X&ved=1t:57443&ictx=111",
+  "sameAs": [
+    "https://www.google.com/maps/dir//MANJU+ELECTRONICS+(4K.LEDTV+SERVICE),+Basthi,+Hosur,+Tamil+Nadu+635109/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae7194d192855f:0xa29cb460e95228a?sa=X&ved=1t:57443&ictx=111"
+  ],
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": [
@@ -140,8 +159,16 @@ const jsonLd = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "LED TV Repair Services in Hosur",
-          "description": "Doorstep repair for Sony brand TV repair in Hosur, Samsung, LG, Mi, OnePlus, TCL, Vu, Panasonic & Haier 4K Smart TVs."
+          "name": "Best LED TV Repair Services in Hosur",
+          "description": "Top-rated doorstep LED TV repair services in Hosur by 4K LED TV repair specialist Mr. Manjunath for Sony, Samsung, LG, Mi, OnePlus, TCL, Vu, Panasonic & Haier 4K Smart TVs."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "4K LED TV Repair Specialist in Hosur",
+          "description": "Specialized 4K LED & OLED Smart TV display panel backlight replacement, T-Con board fixes, and motherboard repairs in Hosur."
         }
       },
       {

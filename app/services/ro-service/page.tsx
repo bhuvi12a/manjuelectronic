@@ -2,6 +2,7 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import BookingForm from "@/app/components/BookingForm";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -99,15 +100,30 @@ export default function ROServicePage() {
 
             <div className="service-hero-card">
               <div className="card-badge">ESSENTIAL SERVICE</div>
-              <div className="visual-tv-card">
-                <span className="tv-icon">💧</span>
-                <h3>Complete RO Care</h3>
-                <ul>
-                  <li>• TDS Check & Water Inspection</li>
-                  <li>• Sediment & Pre-Carbon Filter</li>
-                  <li>• RO Membrane Replacement</li>
-                  <li>• Solenoid Valve & Pump Fix</li>
-                </ul>
+              <div className="visual-equipment-showcase-card">
+                <div className="equipment-card-media">
+                  <Image
+                    src="/images/ro_machine.jpg"
+                    alt="RO Water Purifier Machine Service in Hosur"
+                    width={520}
+                    height={340}
+                    className="equipment-card-img"
+                    priority
+                  />
+                  <div className="equipment-floating-badge">
+                    <span className="live-dot" />
+                    <span>Pure & Safe Drinking Water</span>
+                  </div>
+                </div>
+                <div className="equipment-card-content">
+                  <h3>Complete RO Machine Care</h3>
+                  <ul className="equipment-features-list">
+                    <li>✓ TDS Digital Check & Water Inspection</li>
+                    <li>✓ Sediment & Pre-Carbon Filter Replacement</li>
+                    <li>✓ RO High-TDS Membrane Overhaul</li>
+                    <li>✓ Solenoid Valve & Booster Pump Servicing</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
