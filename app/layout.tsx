@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     "DTH dish installation Hosur",
     "Manju Electronics Hosur",
     "Doorstep TV technician Hosur"
+    
   ],
   authors: [{ name: "Mr. Manjunath - Manju Electronics Hosur" }],
   creator: "Manju Electronics",
@@ -98,7 +99,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "google4ec9957734174401",
+    google: "YEkwtjqMNJ9KBYD3KLb77Nl6NRa2wo3GkUHXCWUSqOI",
   },
 };
 
