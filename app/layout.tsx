@@ -20,6 +20,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.manjuelectronics.in"),
   title: "Best LED TV Repair Services in Hosur | 4K LED TV Repair Specialist | Manju Electronics",
   description:
     "Looking for the best LED TV repair services in Hosur? Manju Electronics is your #1 4K LED TV repair specialist. Doorstep display backlight, panel & motherboard repair for Sony, Samsung, LG, Mi TVs in Hosur. Call +91 98947 66097.",
